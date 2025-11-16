@@ -2,6 +2,7 @@ import ListaTodoPageForm from "./pages/ListaTodoPageForm"
 import ListaTodoPage from "./pages/ListaTodoPage";
 import ListaTodoPageDetail from "./pages/ListaTodoPageDetail";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/edit/:id" element={<ListaTodoPageForm />} />
 				</Routes>
 			</BrowserRouter>
+			<ToastContainer />
 		</>
   );
 }
